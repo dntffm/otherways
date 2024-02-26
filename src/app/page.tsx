@@ -64,7 +64,7 @@ export default function Home() {
 
   return (
     <main className="flex flex-col items-center justify-between p-24">
-      <section className="w-screen h-[calc(100vh+200px)] flex flex-col snap-y snap-mandatory overflow-scroll">
+      <section className="h-screen w-screen flex flex-col snap-y snap-mandatory overflow-scroll">
         <div className="ov m-auto snap-start shrink-0">
           <div className="flex flex-col items-start">
             <h1 className="text-4xl sm:text-6xl font-bold tracking-wide">
