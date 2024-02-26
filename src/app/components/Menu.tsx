@@ -17,7 +17,7 @@ const Menu: React.FC<MenuProps> = ({ setIsOpen }) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className="h-screen w-screen bg-white z-50 p-6 sm:p-24 fixed"
+        className="h-screen w-screen bg-white z-50 p-10 sm:p-24 fixed"
       >
         {isMobile && (
           <div className="w-full h-full flex flex-col justify-between">

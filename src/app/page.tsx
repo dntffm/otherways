@@ -56,17 +56,16 @@ export default function Home() {
 
   useEffect(() => {
     animControls.current = animate([
-      [".vo", { opacity: 0 }, { ease: "easeIn", duration: 0.1 }],
-      [".ov", { opacity: 0 }, { ease: "easeOut", duration: 0.8 }],
-      [".vo", { opacity: 1 }, { ease: "easeIn", duration: 1.0 }],
+      [".ov", { opacity: 0 }, { ease: "easeOut", duration: 0.5 }],
+      [".vo", { opacity: 1 }, { ease: "easeIn", duration: 0.5 }],
     ]);
     animControls.current.pause();
   }, []);
 
   return (
     <main className="flex flex-col items-center justify-between p-24">
-      <section className="h-screen w-screen flex flex-col">
-        <div className="ov m-auto">
+      <section className="h-screen w-screen flex flex-col snap-y snap-mandatory overflow-scroll">
+        <div className="ov m-auto snap-start shrink-0">
           <div className="flex flex-col items-start">
             <h1 className="text-4xl sm:text-6xl font-bold tracking-wide">
               Otherway
@@ -78,7 +77,7 @@ export default function Home() {
             <div className="w-16 border-4 border-black mt-3"></div>
           </div>
         </div>
-        <div className="vo flex flex-col sm:w-1/2 p-12 opacity-0">
+        <div className="vo flex flex-col sm:w-1/2 p-12 opacity-0 snap-start shrink-0">
           <div className="flex flex-col items-start">
             <h1 className="text-xl sm:text-3xl font-bold tracking-wide">
               Otherway
