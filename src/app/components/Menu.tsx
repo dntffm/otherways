@@ -59,9 +59,9 @@ const Menu: React.FC<MenuProps> = ({ setIsOpen }) => {
         {!isMobile && (
           <div className="w-full h-full flex flex-row justify-between">
             <div className="w-1/2 flex flex-col justify-center">
-              <div className="my-auto">
+              <div className="my-auto flex flex-col items-start">
                 <h2 className="text-2xl font-extrabold font-cantarell text-balance w-1/2">Solving Yesterday's and Today's Problem</h2>
-                <div className="w-16 border-4 border-black mt-3 ml-2"></div>
+                <div className="w-16 border-4 border-black mt-3"></div>
               </div>
             </div>
             <div className="w-1/2 font-jkt flex flex-col items-end gap-20">
