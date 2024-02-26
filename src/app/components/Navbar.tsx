@@ -16,7 +16,7 @@ export default function Navbar() {
 
     return (
         <header>
-            {isOpen && <Menu setIsOpen={isOpen, setIsOpen} />}
+            {isOpen && <Menu setIsOpen={setIsOpen} />}
             <nav className="p-6 w-full fixed flex top-0 h-20">
                 <div className="p-6">
                     <button
