@@ -3,20 +3,16 @@
 import { AnimationPlaybackControls, animate, useScroll, motion, useAnimationControls } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
-function onEnd() {
-  console.log('ENDDD');
-  
-}
 
 function Scracth() {
   const ctl = useAnimationControls()
-
+  
   const scratches = [
     "/img/yellow-scr.png",
     "/img/red-scr.png",
     "/img/black-scr.png",
   ]
-
+  
   const [currentScratch, setCurrentScratch] = useState(0)
 
   useEffect(() => {
@@ -84,10 +80,16 @@ export default function Home() {
         </div>
         <div className="vo flex flex-col sm:w-1/2 p-12 opacity-0">
           <div className="flex flex-col items-start">
-            <h1 className="text-xl sm:text-3xl font-bold tracking-wide">Otherway<span>(s)</span></h1>
+            <h1 className="text-xl sm:text-3xl font-bold tracking-wide">
+              Otherway
+              <span className="relative">
+                (s)
+                <Scracth/>
+              </span>
+            </h1>
             <div className="w-16 border-4 border-black mt-3"></div>
           </div>
-          <p className="text-sm text-[#2D304E] mt-4 text-balance">At Otherway(s) we embody a philosophy that challenges conventional thinking and explores alternative avenues to solving yesterday's and today's problems. Our ethos is founded on the belief that innovation flourishes outside the boundaries of the <span className="font-bold border-b border-red\">ordinary</span>. </p>
+          <p className="text-sm text-[#2D304E] mt-4 text-balance">At Otherway(s) we embody a philosophy that challenges conventional thinking and explores alternative avenues to solving yesterday's and today's problems. Our ethos is founded on the belief that innovation flourishes outside the boundaries of the <span className="font-bold border-b border-red-400">ordinary</span>. </p>
         </div>
       </section>
     </main>
